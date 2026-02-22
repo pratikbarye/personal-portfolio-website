@@ -51,6 +51,10 @@ section {
   /* border-bottom: 2px solid rgba(9, 87, 87, 0.3); */
 }
 
+.header.sticky {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
 .logo {
   font-size: 3.2rem;
   color: var(--text-color);
@@ -228,7 +232,7 @@ span {
   color: var(--snd-bg-color);
   padding: 1rem 2.8rem;
   border-radius: 5rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   transition: 0.3s ease;
 }
 
@@ -321,6 +325,7 @@ span {
   background-color: #7ec8e1;
 }
 
+/* CONTACT SECTION CSS CODE */
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -411,7 +416,6 @@ span {
   }
   .skill-container h3 {
     padding: 0.7rem 1.6rem;
-    font-size: 1.8rem;
   }
 }
 
@@ -447,6 +451,27 @@ span {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
   }
 
   .home {
@@ -511,5 +536,11 @@ span {
 
   .contact form .input-box input {
     width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1272px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
