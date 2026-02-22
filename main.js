@@ -31,6 +31,11 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
+  if (mobile.length > 10) {
+    alert("Enter valid mobile number");
+    return;
+  }
+
   // ✅ Send email
   emailjs
     .sendForm("service_2lumpsu", "template_9t4et4g", this)
