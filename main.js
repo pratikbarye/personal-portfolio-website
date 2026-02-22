@@ -1,3 +1,49 @@
+/* ------------------  Form Validation and Send Email -------------------- */
+
+(function () {
+  emailjs.init("YwIXv_3pwCmGVlbB3");
+})();
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // ✅ Simple validation
+  const name = form.from_name.value.trim();
+  const email = form.from_email.value.trim();
+  const mobile = form.mobile.value.trim();
+  const subject = form.subject.value.trim();
+  const message = form.message.value.trim();
+
+  if (!name || !email || !mobile || !subject || !message) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  if (!/^\S+@\S+\.\S+$/.test(email)) {
+    alert("Enter valid email");
+    return;
+  }
+
+  if (mobile.length < 10) {
+    alert("Enter valid mobile number");
+    return;
+  }
+
+  // ✅ Send email
+  emailjs
+    .sendForm("service_2lumpsu", "template_9t4et4g", this)
+    .then(() => {
+      alert("Message sent successfully ✅");
+      form.reset();
+    })
+    .catch((error) => {
+      alert("Failed to send message ❌");
+      console.log(error);
+    });
+});
+
 /* ------------------  Toggle Icon Navbar -------------------- */
 
 let menuIcon = document.querySelector("#menu-icon");

@@ -236,23 +236,42 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="">
+      <form id="contact-form">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Email Address"
+            required
+          />
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input
+            type="tel"
+            name="mobile"
+            placeholder="Mobile Number"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Email Subject"
+            required
+          />
         </div>
 
         <textarea
-          name=""
-          id=""
-          cols="30"
+          name="message"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
 
         <input type="submit" value="Send Message" class="btn" />
@@ -262,7 +281,7 @@
     <!-- FOOTER DESIGN -->
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2026 by @pratik_barye | All Rights Reserved.</p>
+        <p>Copyright &copy; 2026 Pratik Barye | All Rights Reserved.</p>
       </div>
 
       <div class="footer-iconTop">
@@ -277,6 +296,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- MAIN JS-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

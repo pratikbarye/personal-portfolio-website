@@ -8,11 +8,9 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
+
   /* from google fonts */
   font-family: "Nunito", sans-serif;
-  /* font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal; */
 }
 
 :root {
