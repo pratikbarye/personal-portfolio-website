@@ -30,10 +30,14 @@
 
 /* CSS For Light mode + dark mode toggle */
 #theme-toggle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   position: absolute;
   right: 7rem;
   top: 2.5rem;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 20%;
+  padding: 0.5rem 2.5rem 0.5rem 0.3rem;
 }
 
 ::selection {
