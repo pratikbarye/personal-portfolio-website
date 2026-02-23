@@ -432,6 +432,11 @@ span {
   section {
     padding: 10rem 3%;
   }
+  .about-img img {
+    height: 40vh;
+    width: 40vw;
+    object-fit: cover;
+  }
 
   .portfolio {
     padding-bottom: 7rem;
@@ -496,9 +501,12 @@ span {
   .about {
     flex-direction: column;
   }
+  .about-content {
+    padding-left: 8rem;
+  }
 
   .about-img img {
-    width: 70vw;
+    width: 75vw;
     margin-top: 4rem;
   }
 
@@ -520,16 +528,38 @@ span {
     width: 80vw;
     margin-top: 8rem;
   }
+  .about-content {
+    padding-left: 7rem;
+  }
 
   .about-img img {
     width: 75vw;
-    /* margin-top: 4rem; */
+    margin-top: 4rem;
   }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home-img img {
+    height: 45vh;
+    width: 70vw;
+  }
+
+  .home-content {
+    margin-top: 1.5rem;
+    padding-left: 4rem;
+  }
+  .home-content .and {
+    display: none;
+  }
+  .home-content p {
+    padding: 0 3rem 0 0;
+  }
+
+  .about-content {
+    padding-left: 4.5rem;
   }
 
   .contact form .input-box input {
