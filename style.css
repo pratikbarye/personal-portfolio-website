@@ -543,12 +543,13 @@ span {
     font-size: 50%;
   }
   .home-img img {
-    height: 45vh;
+    height: 40vh;
     width: 70vw;
+    margin-top: 3rem;
   }
 
   .home-content {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding-left: 4rem;
   }
   .home-content .and {
