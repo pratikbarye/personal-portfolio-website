@@ -510,13 +510,24 @@ span {
   .about {
     flex-direction: column;
   }
+
   .about-content {
     padding-left: 8rem;
+  }
+
+  .about-content h3 {
+    margin-top: 0.6rem;
   }
 
   .about-img img {
     width: 75vw;
     margin-top: 4rem;
+  }
+
+  .about-content p {
+    margin: 2rem 8rem 3rem 0;
+    /* margin: 2rem 6rem 3rem 0; */
+    line-height: 2.6rem;
   }
 
   .portfolio h2 {
@@ -557,6 +568,10 @@ span {
   .about-img img {
     width: 75vw;
     margin-top: 4rem;
+  }
+  .about-content p {
+    margin: 2rem 6rem 3rem 0;
+    /* margin: 2rem 6rem 3rem 0; */
   }
 }
 
