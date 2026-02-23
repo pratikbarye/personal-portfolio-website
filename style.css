@@ -120,13 +120,14 @@ span {
 }
 
 .home-img img {
-  width: 25vw;
-  animation: floatImage 2.3s ease-in-out infinite;
-
-  height: 60vh;
+  width: clamp(260px, 25vw, 390px);
+  /* width: clamp(220px, 25vw, 350px); */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
   border: 0.4rem solid var(--main-color);
+  animation: floatImage 2.3s ease-in-out infinite;
+  display: block;
 }
 
 .home-content p {
@@ -481,6 +482,10 @@ span {
     flex-direction: column;
   }
 
+  .home-img img {
+    margin-top: 4rem;
+  }
+
   .home-content h3 {
     font-size: 2.6rem;
   }
@@ -542,21 +547,10 @@ span {
   html {
     font-size: 50%;
   }
-  .home-img img {
-    height: 40vh;
-    width: 70vw;
-    margin-top: 3rem;
-  }
 
   .home-content {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding-left: 4rem;
-  }
-  .home-content .and {
-    display: none;
-  }
-  .home-content p {
-    padding: 0 3rem 0 0;
   }
 
   .about-content {
@@ -565,12 +559,6 @@ span {
 
   .contact form .input-box input {
     width: 100%;
-  }
-}
-
-@media (max-width: 330px) {
-  .home-img img {
-    height: 30vh;
   }
 }
 
