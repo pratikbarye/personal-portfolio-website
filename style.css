@@ -130,20 +130,20 @@ span {
 }
 
 .home-content p {
-  font-size: 1.8rem;
-  padding: 0 6rem 0 0;
+  font-size: 2rem;
+  padding: 0 5.5rem 0 0;
 }
 
 .social-media a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
@@ -161,10 +161,10 @@ span {
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   color: var(--bg-color);
   letter-spacing: 0.1rem;
-  font-weight: 600;
+  font-weight: 650;
   transition: 0.5s ease;
 }
 
@@ -213,12 +213,15 @@ span {
 
 /* SKILLS SECTION CSS CODE */
 
+.skills {
+  min-height: 90vh;
+}
+
 .skills h2 {
   margin-bottom: 6rem;
 }
 
 .skill-container {
-  /* border: 2px solid green; */
   display: grid;
   grid-template-columns: repeat(4, max-content);
   justify-content: center;
@@ -503,7 +506,6 @@ span {
   }
 
   .home-content p {
-    font-size: 2rem;
     padding: 0 4rem 0 0;
   }
 
@@ -550,14 +552,10 @@ span {
   }
 
   .social-media a {
-    width: 5rem;
-    height: 5rem;
-    font-size: 3rem;
     margin: 5rem 1.5rem 3rem 0;
   }
 
   .home-content .btn {
-    font-size: 2.3rem;
     margin-top: 1rem;
   }
 
