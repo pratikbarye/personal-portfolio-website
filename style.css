@@ -568,6 +568,12 @@ span {
   }
 }
 
+@media (max-width: 330px) {
+  .home-img img {
+    height: 30vh;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1272px) {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
