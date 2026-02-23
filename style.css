@@ -526,8 +526,7 @@ span {
 
   .about-content p {
     margin: 2rem 8rem 3rem 0;
-    /* margin: 2rem 6rem 3rem 0; */
-    line-height: 2.6rem;
+    line-height: 2rem;
   }
 
   .portfolio h2 {
@@ -571,7 +570,6 @@ span {
   }
   .about-content p {
     margin: 2rem 6rem 3rem 0;
-    /* margin: 2rem 6rem 3rem 0; */
   }
 }
 
