@@ -526,7 +526,8 @@ span {
 
   .about-content p {
     margin: 2rem 8rem 3rem 0;
-    line-height: 2rem;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
   }
 
   .portfolio h2 {
